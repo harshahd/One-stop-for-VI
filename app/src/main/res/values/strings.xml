@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">One stop for VI</string>
+    <string name="connection_error">Connection error</string>
+    <string name="connection_error_message">Sorry. looks like connection is not available or your connection may be week. Please try again.</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="download_software">Download software</string>
+    <string name="share_link">Share link</string>
+    <string name="share_description">Share description</string>
+    <string name="android">Android apps</string>
+    <string name="windows">Windows apps</string>
+    <string name="mac">Mac apps</string>
+    <string name="lynics">Lynics apps</string>
+    <string name="first_page">You are in first page</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tool_software">Softwares</string>
+    <string name="tool_tts_catalog">Text to speech catalog</string>
+    <string name="select_language">Select a language</string>
+    <string name="select_tts">Select Text to speech</string>
+    <string name="next_voice_page">Next voice page</string>
+    <string name="previous_voice_page">Previous voice page</string>
+    <string name="server_down_connection_weak">The server may be down or your connection may be week. Please try again later</string>
+    <string name="search_software">Search software</string>
+    <string name="next_page">Next page</string>
+    <string name="previous_page">Previous page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio">Radio</string>
+    <string name="view_downloads">View downloads (experimental)</string>
+    <string name="unable_download_temperary">Error! Unable to download file.</string>
+    <string name="unable_download_permanent">Error! Unable to download file. Grant storage permission.</string>
+    <string name="can_download">Permission granted. try to download again.</string>
+    <string name="category">Category</string>
+    <string-array name="categories">
+        <item>Any</item>
+        <item>Activators for microsoft products</item>
+        <item>Backup And Restore</item>
+        <item>Books And Reference</item>
+        <item>CD/DVD tools</item>
+        <item>compression and archiving</item>
+        <item>Educational</item>
+        <item>File Sharing</item>
+        <item>FTP Client</item>
+        <item>Games</item>
+<item>Internet</item>
+        <item>Lifestyle</item>
+        <item>Miscellaneous</item>
+        <item>MS office</item>
+        <item>Multimedia</item>
+        <item>News and Magazines</item>
+        <item>Operating system</item>
+        <item>Programming tools</item>
+        <item>Social</item>
+        <item>Software for visually impaired</item>
+        <item>System utilities</item>
+       <item>Text editors and converters</item>
+        <item>Text to speech</item>
+        <item>VPN and Proxy</item>
+    </string-array>
+    <string name="last_page">You are at last page.</string>
+    <string name="refresh_download_progress">Refresh download progress</string>
+    <string name="download_file">Download file</string>
+<string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancelled_download">Download cancelled</string>
+    <string name="copyright_notice">We use various websites to collect softwares that will enable visually challenged people. These softwares are not maintained by us. All the websites and softwares that we obtain are copyrights of the respective owners. We still working on showing download progress live. Please expect this feature in the later version. To see download progress, Please use navigation drawer and navigate to View downloads.</string>
+</resources>

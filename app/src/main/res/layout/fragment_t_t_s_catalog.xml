@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TTSCatalog">
+
+
+
+
+<Spinner
+    android:id="@+id/select_tts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:prompt="@string/select_tts"/>
+<Spinner
+        android:id="@+id/select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:spinnerMode="dropdown"
+        android:layout_alignParentEnd="true"
+android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/select_tts"
+    android:layout_toEndOf="@+id/select_tts"
+android:prompt="@string/select_language"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ttsAdd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/select_tts"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8660578713934275/6250522232"/>
+
+
+
+    <ScrollView
+    android:id="@+id/voiceDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/select_language"
+    android:layout_alignParentStart="true">
+
+<TextView
+    android:id="@+id/ttsDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</ScrollView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/voiceList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_below="@+id/voiceDescription"
+    android:layout_alignParentStart="true"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ttsAdd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/voiceList"
+        android:nextFocusLeft="@+id/ttsPageNavigation"
+    ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8660578713934275/7372032219"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ttsPageNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:layout_alignBottom="@+id/ttsAdd2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/prevVoicePage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:text="@string/previous_voice_page"/>
+
+        <Button
+            android:id="@+id/nextVoicePage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+                        android:layout_margin="8dp"
+            android:padding="5dp"
+            android:text="@string/next_voice_page"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

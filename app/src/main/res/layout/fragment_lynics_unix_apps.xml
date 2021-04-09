@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+            tools:context=".LynicsUnixAppsFragment">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdd4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8660578713934275/4725138839"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/softwareLynics"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintTop_toBottomOf="@+id/bannerAdd4"
+        ads:layout_constraintBottom_toTopOf="@+id/bottomBannerAdd4"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bottomBannerAdd4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/lynicsNavigationButtons"
+        ads:layout_constraintBottom_toTopOf="@+id/prevLynics"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8660578713934275/3928090151"/>
+
+
+
+        <Button
+            android:id="@+id/prevLynics"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:text="@string/previous_page"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Spinner
+        android:id="@+id/lynicsCategory"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/category"
+        android:entries="@array/categories"
+        android:focusable="true"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintStart_toEndOf="@+id/prevLynics"
+        ads:layout_constraintEnd_toStartOf="@+id/nextLynics"/>
+
+
+    <Button
+            android:id="@+id/nextLynics"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:text="@string/next_page"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

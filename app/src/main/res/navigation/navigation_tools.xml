@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/tool_software">
+
+<fragment
+    android:id="@+id/tool_software"
+    android:name="com.harshaapps.onestopforvi.SoftwareFragment"
+        android:label="@string/tool_software"
+        tools:layout="@layout/fragment_software"/>
+
+    <fragment
+        android:id="@+id/tool_tts_catalog"
+        android:name="com.harshaapps.onestopforvi.TTSCatalog"
+        android:label="@string/tool_tts_catalog"
+        tools:layout="@layout/fragment_t_t_s_catalog"/>
+
+
+    <fragment
+        android:id="@+id/tool_downloads"
+        android:label="@string/view_downloads"
+        android:name="com.harshaapps.onestopforvi.DownloadsFragment"
+        tools:layout="@layout/fragment_item_list"/>
+
+
+</navigation>
